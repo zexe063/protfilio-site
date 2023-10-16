@@ -1,11 +1,17 @@
 
 import "./App.css"
+import "./editor.css"
 import Code from "./component/codeeditorr"
 // import Helo from "./component/helo"
 
 import Home from "./component/home";
 import Indexhtml from "./component/codeindex";
-import Liveserver from "./component/liverserver";
+import Liveserver from "./component/liverserver"; 
+import Editor from "./component/editorcontent";
+import Tool from "./component/tool";
+import Card from "./component/card";
+import Foter from "./component/footer";
+// import CardCarousel from "./component/swiper";
 
 
 
@@ -25,17 +31,21 @@ return(
   <Indexhtml></Indexhtml>
   <Code></Code>
   <Liveserver></Liveserver>
+ <Editor></Editor>
 </section>
 
-<section className="helo">
-
+<section className="toolcontainer">
+<Tool></Tool>
 </section>
-<section>galo</section>
-<section>jjsjs</section>
-<section>phelo</section>
-<section>nal</section>
-<section>kajl</section>
-<section>nhh</section>
+
+<section className="cardcontainer">
+<Card></Card>
+</section>
+
+
+<section className="footercontainer">
+  <Foter></Foter>
+</section>
 
 </div>
 )

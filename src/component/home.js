@@ -1,6 +1,6 @@
 import hljs from "highlight.js";
 import { useEffect, useRef } from "react";
-import myImage from "../image.png"
+// import myImage from "../image.png"
 
 
 
@@ -46,7 +46,7 @@ function Home(){
       </div>
 
    <div className="image">
-      <img src={myImage} alt="code"></img>
+      <img src="https://img.freepik.com/free-photo/3d-render-code-testing-functional-test-usability_107791-16607.jpg?size=626&ext=jpg&ga=GA1.2.1393683746.1697037763&semt=ais" alt="code"></img>
    </div>
       </div>
          

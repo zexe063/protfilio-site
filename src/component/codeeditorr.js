@@ -1,6 +1,6 @@
 
 import hljs from "highlight.js";
-import 'highlight.js/styles/stackoverflow.css';
+import 'highlight.js/styles/night-owl.css';
 import { useEffect, useRef, useState } from "react";
 
 

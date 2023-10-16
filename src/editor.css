@@ -1,0 +1,667 @@
+
+.container .codecontainer .editor{
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 900px;
+  
+}
+
+.container .codecontainer .editor .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.container .codecontainer .editor .content .data{
+  position: absolute;
+  left: 80px;
+  width: 60%;
+  height: 100px;
+ 
+
+}
+
+.container .codecontainer .editor .content .data h2{
+  position: relative;
+
+  font-family: "poppins", sans-serif;
+  font-size: 40px;
+  color: #7ee783;
+  text-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1);
+}
+.container .codecontainer .editor .content .data h2 span{
+  color:  #181818;
+}
+
+.container .codecontainer .editor .content .twoeditor{
+  position: relative;
+  top: 250px;
+  width: 100%;
+ height: 70%;
+display: flex;
+justify-content: space-between;
+
+z-index: -1000px;
+}
+.container .codecontainer .editor .content .twoeditor .python{
+  position: relative;
+  top: 100px;
+  left: 50px;
+width: 800px;
+height: 500px;
+/* background-color: rgba(255,255,255,0.2); */
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+border-radius: 10px;
+background: hsla(59, 86%, 68%, 1);
+
+background: linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4F269", endColorstr="#5CB270", GradientType=1 );
+z-index: -1000px;
+
+
+
+}
+
+.container .codecontainer .editor .content .twoeditor .python .program{
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  width: 95%;
+  height: 98%;
+/* From https://css.glass */
+/* background: rgba(255, 255, 255, 0.2); */
+background-color: #183153;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+}
+
+
+.container .codecontainer .editor .content .twoeditor .python .program pre{
+  position: relative;
+  right: 30px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.container .codecontainer .editor .content .twoeditor .cplus{
+position: absolute;
+right: 10px;
+top: -40px;
+/* left: 100px; */
+
+width: 500px;
+height: 500px;
+background: hsla(171, 87%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#61F4DE", endColorstr="#6E78FF", GradientType=1 );
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border-radius: 10px;
+z-index: -1000px;
+
+}
+.container .codecontainer .editor .content .twoeditor .cplus .program{
+  position: absolute;
+  top: 2px;
+  left: 12.5px;
+  width: 95%;
+  height: 98%;
+/* From https://css.glass */
+/* background: rgba(255, 255, 255, 0.2); */
+background-color: #fff;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+ 
+}
+.container .codecontainer .editor .content .twoeditor .cplus .program pre {
+  position: absolute;
+  left: -100px;
+  font-size: 15px;
+}
+.container .codecontainer .editor .content .twoeditor .cplus .program pre{
+  background-color: transparent;
+}
+
+/* ########## HERE THE TOOL CONTENT START ###### */
+
+.container .toolcontainer{
+  position: relative;
+top: 0;
+left: 0;
+width: 100%;
+min-height: 1500px;
+max-height: 2000px;
+/* background-color: blue; */
+}
+
+.container .toolcontainer .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+
+.container .toolcontainer .content .toolname{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+ 
+    
+}
+
+.container .toolcontainer .content .toolname .data{
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container .toolcontainer .content .toolname .data h3{
+  position: relative;
+  font-size: 40px;
+  font-family: "poppins", sans-serif;
+  color: #181818;
+}
+.container .toolcontainer .content .toolname .data span{
+  position: relative;
+  bottom: 30px;
+ left: 50px;
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  color: #183153;
+  font-weight: bolder;
+}
+
+.container .toolcontainer .content .toolname .image{
+  position: relative;
+  top: 40px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.container .toolcontainer .content .toolname .image .first{
+position: relative;
+display: flex;
+width: 100%;
+height: 50%;
+justify-content: center;
+align-items: center;
+gap: 80px;
+}
+
+.container .toolcontainer .content .toolname .image .second{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+
+ 
+
+}
+
+.container .toolcontainer .content .uses{
+  position: absolute;
+  top: 40%;
+  left: 0;
+ 
+  width: 100%;
+height: 60%;
+
+
+}
+.container .toolcontainer .content .uses .first{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 40%;
+
+}
+
+.container .toolcontainer .content .uses .first .image{
+  position: relative;
+  top: 80px;
+  left: 30px;
+}
+.container .toolcontainer .content .uses .first .data{
+position: absolute;
+top: 100px;
+right: 130px;
+
+}
+
+.container .toolcontainer .content .uses .first .data h2{
+  position: relative;
+  font-family: "poppins",sans-serif;
+  font-size: 35px;
+}
+
+
+.container .toolcontainer .content .uses .first .data span{
+  position: absolute;
+  top: 140px;
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+
+}
+.container .toolcontainer .content .uses .first .data button{
+  position: relative;
+  top: 50px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 23px;
+  font-family: "poppins", sans-serif;
+  background-color: CEE1FA;
+  color: #181818;
+  font-weight: bolder;
+}
+
+
+.container .toolcontainer .content .uses .second{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  height: 50%;
+  margin-top: 10px;
+}
+.container .toolcontainer .content .uses .second .data{
+  position: relative;
+  top: 170px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  
+}
+.container .toolcontainer .content .uses .second .data h2{
+  position: relative;
+  font-size: 25px;
+  font-family: "poppins",sans-serif;
+}
+.container .toolcontainer .content .uses .second .data span{
+  position: relative;
+  left: 20px;
+  width: 400px;
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+.container .toolcontainer .content .uses .second .data button{
+  position: relative;
+  top: 40px;
+  right: 135px;
+  padding: 15px 23px;
+  border-radius: 5px;
+  border: none;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  background-color: CEE1FA;
+  font-weight: bolder;
+  color: #181818;
+}
+
+.container .toolcontainer .content .uses .second .image{
+  position: relative;
+  top: 100px;
+}
+
+/* here the card satrt */
+
+.container .cardcontainer{
+  position: relative;
+  top: 180px;
+  left: 0;
+  width: 100%;
+min-height: 900px;
+  /* background-color: #F8F9F9; */
+  /* background-color: red; */
+ 
+}
+
+.container .cardcontainer .content{
+  position: absolute;
+ width: 100%;
+ height: 100%;
+
+
+}
+.container  .cardcontainer .content .data{
+  position: relative;
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container .cardcontainer .content .data h2{
+  position: relative;
+  font-size: 45px;
+  font-family: "poppins", sans-serif;
+  color: #181818;
+}
+.container .cardcontainer .content .data p{
+  position: relative;
+  bottom: 40px;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  font-weight: inherit;
+  color: #454545;
+}
+
+
+.container .cardcontainer .content .data p span{
+  position: relative;
+  left: 60px;
+ text-align: center;
+}
+
+.container .cardcontainer .content .cardcontent{
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 50%;
+  background-color: #f8F9F9;
+  display: flex;
+  
+ 
+  flex-direction: column;
+gap: 20px;
+}
+
+.container .cardcontainer .content .cardcontent .first{
+position: relative;
+top: -25px;
+width: 100%;
+display: flex;
+justify-content: center;
+
+gap: 20px;
+
+}
+.container .cardcontainer .content .cardcontent .first .card{
+  position: relative;
+  width: 300px;
+  height: 120px;
+  border: 1.9px solid #707070;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 3px 0 rgba( 31, 38, 135, 0.37 ); */
+
+  
+}
+
+.container .cardcontainer .content .cardcontent .second{
+  position: relative;
+  top: -15px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  gap: 20px;
+  
+  }
+
+  .container .cardcontainer .content .cardcontent .second .card{
+    position: relative;
+    width: 300px;
+    height: 120px;
+    border: 1.9px solid #707070;
+    background-color: #ffffff;
+    /* background-color: red; */
+    
+    border-radius: 10px;
+    /* box-shadow: 0 2px 3px 0 rgba( 31, 38, 135, 0.37 ); */
+  
+    
+  }
+  
+  .container .cardcontainer .content .cardcontent .third{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    
+    
+    }
+    .container .cardcontainer .content .cardcontent .third .card{
+      position: relative;
+      width: 300px;
+      height: 120px;
+      border: 1.9px solid #707070;
+      background-color: #ffffff;
+      /* background-color: red; */
+      
+      border-radius: 10px;
+      /* box-shadow: 0 2px 3px 0 rgba( 31, 38, 135, 0.37 );  */
+    
+      
+    }
+    .container .cardcontainer .content .cardcontent .special .card{
+      position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      
+    }
+    .container .cardcontainer .content .cardcontent .special .card box-icon{
+      position: relative;
+      top: -26px;
+      left: 20px;
+    }
+    .container .cardcontainer .content .cardcontent .special .card p{
+   position: relative;
+   width: 100%;
+   display: flex;
+   font-family: "poppins", sans-serif;
+   font-size: 16px;
+   letter-spacing: 0.3px;
+   font-weight: bolder;
+   color: #454545;
+    }
+    .container .cardcontainer .content .cardcontent .special .card p box-icon{
+      position: relative;
+      top: 0;
+      left: 0;
+      font-family: "poppins", sans-serif;
+      font-size: 15px;
+    }
+
+
+    /* here the footer container start */
+
+    .container .footercontainer{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+     min-height: 350px;
+     overflow: hidden;
+    
+    }
+
+    .container .footercontainer .footer{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   background-color: #ffd43b;
+
+
+    }
+    .container .footercontainer .footer .content{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    
+
+    }
+
+    .container .footercontainer .footer .content p{
+      position: relative;
+      bottom: 30px;
+      right: 230px;
+      font-family: "poppins",sans-serif;
+      font-size: 15px;
+      display: flex;
+      align-items: flex-end;
+      color: #183153;
+      /* font-weight: 1000px; */
+    }
+
+    .container .footercontainer .footer .content  .data{
+      position: relative;
+      left: 150px;
+      width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+    }
+
+    .container .footercontainer .footer .content  .data h3{
+      position: relative;
+      top: 10px;
+      left: 3px;
+      font-family: "poppins",sans-serif;
+      font-size: 14px;
+  font-weight: bolder;
+  color: #183153;
+    } 
+    .container .footercontainer .footer .content  .data p{
+      position: relative;
+      text-align: center;
+      left: 2px;
+      top: 10px;
+      width: 90%;
+      font-family: "poppins", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      color: #fff;
+      
+    }
+
+    .container .footercontainer .footer .data span{
+      position: relative;
+      width: 80%;
+      font-family: "poppins", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      color: #fff;
+    }
+    .container .footercontainer .footer .data a{
+      position: relative;
+      top: 40px;
+      right: 13px;
+      text-decoration: none;
+      padding: 10px;
+      font-family: "poppins", sans-serif;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    
+
+    .container .footercontainer .footer .content .list{
+position: relative;
+width: 50%;
+height: 100%;
+display: flex;
+/* background-color: red; */
+
+    }
+    .container .footercontainer .footer .content .list .second{
+      position: relative;
+     right: 100px;
+    }
+    .container .footercontainer .footer .content .list .third{
+      position: relative;
+      right: 200px;
+    }
+   
+    .container .footercontainer .footer .content .list ul{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .container .footercontainer .footer .content .list ul :first-child{
+      position: relative;
+      bottom: 10px;
+      color: #707070;
+    }
+    
+    .container .footercontainer .footer .content .list ul li{
+      position: relative;
+      list-style: none;
+      font-family: "poppins", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      font-weight: inherit;
+      color: #fff;
+      padding: 3px;
+    }
