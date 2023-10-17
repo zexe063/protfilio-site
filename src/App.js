@@ -12,15 +12,28 @@ import Tool from "./component/tool";
 import Card from "./component/card";
 import Foter from "./component/footer";
 // import CardCarousel from "./component/swiper";
-
+import {ClipLoader} from "react-spinners"
+import { useEffect, useState,CSSProperties } from "react";
 
 
 
 
 function App(){
+
+  let [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+       setLoading(false)
+    },2000)
+  },[])
+
+
 return(
 
-  <div className="container">
+  <>
+  {loading ? <div className="spinner"><ClipLoader color="#36d7b7" size={60} /></div> : <div className="container">
+
 
 <section className="homecontainer">
 <Home></Home>
@@ -47,7 +60,8 @@ return(
   <Foter></Foter>
 </section>
 
-</div>
+</div> }
+  </>
 )
 
 }
